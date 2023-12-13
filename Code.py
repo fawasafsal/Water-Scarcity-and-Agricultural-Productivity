@@ -5,7 +5,7 @@ def process_dataset(filename):
     # Read the dataset
     dataset = pd.read_csv(filename)
     
-    # Remove leading/trailing whitespaces in column names
+    # Remove leading/trailing whitespaces in column name
     dataset.columns = dataset.columns.str.strip()
     
     # Convert numeric columns to appropriate data type and handle missing values
